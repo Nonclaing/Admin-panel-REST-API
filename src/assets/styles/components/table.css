@@ -1,0 +1,50 @@
+.table-root {
+  max-width: 100%;
+}
+.table-root .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table-root .table th, .table-root .table td {
+  padding: 15px;
+  text-align: center;
+}
+.table-root .table td {
+  word-wrap: anywhere;
+}
+.table-root .table th {
+  border-bottom: 1px solid black;
+}
+.table-root .table .sort span {
+  cursor: pointer;
+  position: relative;
+}
+.table-root .table .sort span:after {
+  content: "";
+  position: absolute;
+  margin-left: 5px;
+  width: 20px;
+  height: 15px;
+  top: 50%;
+  left: 100%;
+  background: url("@/assets/icons/arrow.svg") 0 0 no-repeat;
+  background-size: contain;
+  transform: translate(0, -25%);
+}
+.table-root .img-link {
+  width: 100px;
+  height: 100px;
+}
+.table-root .img-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.table-root .not-found {
+  padding: 15px;
+  border-radius: 8px;
+  color: #721c24;
+  background-color: #f8d7da;
+}
+
+/*# sourceMappingURL=table.css.map */

@@ -1,0 +1,102 @@
+.table {
+  max-width: 100%;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+    }
+
+    td {
+      word-wrap: anywhere;
+    }
+
+    th {
+      transition: $themeTransition;
+      border-bottom: 1px solid black;
+    }
+
+    .table__sort {
+
+      span {
+        cursor: pointer;
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          margin-left: 5px;
+          width: 20px;
+          height: 15px;
+          top: 50%;
+          left: 100%;
+          background-color: black;
+          mask-image: url("@/assets/icons/arrow.svg");
+          mask-repeat: no-repeat;
+          background-size: contain;
+          transform: translate(0, -25%);
+          transition: $themeTransition;
+        }
+      }
+    }
+  }
+
+  .table__head {
+
+  }
+
+  .table__row {
+
+  }
+
+  .table__body {
+
+  }
+
+  .table__img-link {
+    width: 100px;
+    height: 100px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .table__not-found {
+    transition: $themeTransition;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #9d1c24;
+    background-color: #f8d7da;
+  }
+}
+
+.dark {
+  .table {
+    table {
+      th {
+        border-color: $dark-text;
+
+        .table__sort {
+          span {
+            &:after {
+              background-color: $dark-text
+            }
+          }
+        }
+      }
+    }
+    .table__not-found {
+      color: $dark-text-table-not-found;
+      border-color: $dark-border-table-not-found;
+      background-color: $dark-bg-table-not-found;
+    }
+  }
+}

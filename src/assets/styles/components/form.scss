@@ -1,0 +1,27 @@
+.form {
+  padding-top: 3rem;
+  max-width: 90rem;
+
+  .form__item {
+    display: flex;
+    align-items: center;
+
+    & + .form__item {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .form__label {
+    flex: 0 0 15rem;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+}
+
+.dark {
+  .form {
+
+  }
+}

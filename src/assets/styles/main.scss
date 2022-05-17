@@ -1,0 +1,71 @@
+@import "utils/reset";
+@import "utils/yars";
+@import "thems/dark";
+@import "thems/light";
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+
+  &.lock {
+    overflow-y: hidden;
+  }
+}
+
+body, html {
+  width: 100%;
+  margin: 0;
+  font-size: 62.5%;
+}
+
+
+#app, .app {
+  display: flex;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  min-height: 100%;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: $themeTransition;
+
+}
+.dark {
+  &.app {
+    background-color: $dark-bg-main;;
+    color: $dark-text;
+  }
+}
+
+.wrapper {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .wrapper__content {
+    flex: 1 1 auto;
+    padding-bottom: 2.0rem;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 141.5rem;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.main__content {
+  margin: 2rem 0 0 0;
+}
+
+
+@import "components/_components";
+

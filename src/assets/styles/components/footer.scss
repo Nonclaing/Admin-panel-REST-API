@@ -1,0 +1,27 @@
+.footer {
+  background-color: $light-green;
+  transition: $themeTransition;
+
+  .footer__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: $light-dark-blue;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 116%;
+
+    transition: $themeTransition;
+  }
+}
+
+.dark {
+  .footer {
+    background-color: $dark-bg-footer;
+    .footer__content {
+      color: $dark-footer-text;
+    }
+  }
+
+}

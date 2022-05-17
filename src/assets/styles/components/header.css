@@ -1,0 +1,45 @@
+.header {
+  width: 100%;
+  background: #c8cccc;
+}
+.header .header__content {
+  display: flex;
+  align-items: center;
+}
+.header .header__navbar {
+  padding: 15px;
+}
+.header .header__navbar a {
+  font-weight: bold;
+  color: #2c3e50;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.header .header__navbar a:not(:last-child) {
+  margin-right: 8px;
+}
+.header .header__navbar a:hover {
+  color: #55826a;
+}
+.header .header__navbar a.router-link-exact-active {
+  color: #42b983;
+}
+.header .header__theme {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-left: auto;
+  justify-self: end;
+}
+.header .header__theme .header__theme-text:before {
+  content: "Light";
+}
+.header .header__theme .header__theme-img {
+  width: 30px;
+  height: 30px;
+  background: url("./assets/icons/sun.svg") 0 0 no-repeat;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=header.css.map */

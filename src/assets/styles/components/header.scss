@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  background: $light-bg-second;
+  transition: $themeTransition;
+
+  .header__content {
+    display: flex;
+    align-items: center;
+
+    .header__content-item {
+
+      &.header__content-item_end {
+        justify-self: end;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.dark {
+
+  .header {
+    background: $dark-bg-second;
+  }
+}
